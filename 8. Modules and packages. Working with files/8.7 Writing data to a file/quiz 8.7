@@ -1,0 +1,51 @@
+a very difficult lesson and unfortunately there is only a quiz in it.
+for such lessons, many tasks are needed to get the skill of working with files.
+quiz questions of this lesson:
+
+1)  Check all access modes for writing information to a file.
+    >> w
+    >> wb
+    >> a+
+    >> a
+
+2)  What happens if you open a non-existent file for writing?
+    >> a new empty file will be created
+
+3)  Check the file methods that allow you to write information to a file in text access mode.
+    >> writelines
+    >> write
+
+4)  What will be written to the out.txt file when the following program fragment is executed:
+        try:
+            with open('out.txt', 'w') as file:
+                file.write('Hello')
+                file.write('Hello')
+        except:
+            print('Error while working with file')
+    >> two lines 'Hello' one after the other (in a line)
+
+5)  What happens if you do not close the file (using the close method) when writing information to it?
+    >> some recorded data may be lost
+
+6)  What is the 'a+' access mode used for?
+    >> for adding information to a file and reading previously recorded data
+
+7)  There is a list of lines:
+        t = ['- Tell me, uncle, it's not for nothing',
+            'I learned Python with a channel',
+            'What was Balakirev handing out?']
+    What is the easiest way to write them to a file (at once)?
+    >> writelines
+
+8)  What file access modes are binary?
+    >> wb
+    >> rb
+
+9)  Suppose we want to save the entire dictionary d to the file file using the pickle module in binary mode:
+        d = {'car': 'машина', 'tree': 'дерево', 'road': 'дорога'}
+    Choose the command that correctly performs this action.
+    >> pickle.dump(d, file)
+
+10) Suppose we want to read a dictionary from file file using the pickle module in binary mode.
+    Choose the command that correctly performs this action.
+    >> d = pickle.load(file)

@@ -1,0 +1,46 @@
+in this lesson we do not solve examples, but there is a quiz:
+
+1) The project's working directory contains the panda.py file. Check the commands that allow you to import this module
+into the program (the program is also located in the working directory).
+    >> from panda import *
+    >> import panda
+
+2) In the working directory of the project with the current program, there is a libs subdirectory in which the panda.py
+file is located. Check the commands that allow you to import this module into the program.
+    >> import libs.panda
+    >> from libs.panda import *
+
+3) The project's working directory contains the panda.py file, and the libs subdirectory contains an executable file
+that imports the panda.py module. Check the commands that allow you to import this module into the program.
+    >> from panda import *
+    >> import panda
+
+4) The project's working directory contains the panda.py file, which declares the variable PND and a function called
+panda_say. Check the commands that allow you to import these elements from the panda.py module
+(the program is also in the working directory).
+    >> import panda
+    >> from panda import PND, panda_say
+
+5) The project's working directory contains the panda.py file and the current program.
+What happens if you import the panda.py module into the program twice?
+    >> panda module is only imported once (first) time
+
+6) In the panda.py module, in its global scope, the command is written:
+print('PANDA')
+What happens when this module is imported into the program?
+    >> the module is imported and the line with the print function will be executed
+
+7) In the panda.py module, the kungfu.py module is additionally imported with the command:
+import kungfu
+This module defines a variable named KUNGFU. The panda.py module is imported into the program with the command:
+import panda
+Which command allows you to correctly access the KUNGFU variable?
+    >> panda.kungfu.KUNGFU
+
+8) In the panda.py module, in its global scope, the command is written:
+print('PANDA')
+What condition should be used so that this command is executed only when this module is directly launched?
+    >> __name__ == "__main__"
+
+9) What does the importlib.reload function of the importlib module do?
+    >> allows you to re-import modules

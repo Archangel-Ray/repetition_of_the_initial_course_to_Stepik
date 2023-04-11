@@ -1,0 +1,34 @@
+in this lesson we do not solve examples, but there is a quiz:
+
+1) How is a package different from a module?
+    >> a package is a directory with a set of modules and a required __init__.py file
+
+2) What commands can be used to import a package named panda_pack?
+    >> import panda_pack
+    >> from panda_pack import *
+
+3) What is the purpose of the __init__.py file in a package?
+    >> it is executed when the package is imported
+
+4) The panda_pack package contains the panda.py module.
+Check the commands written in the __init__.py file that allow you
+to import either the panda.py module itself or its contents:
+    >> import panda_pack.panda
+    >> from panda_pack.panda import *
+    >> from .panda import *
+
+5) The panda_pack package has a panda.py module that defines the PND variable.
+In the __init__.py file, the module is imported with the command:
+    from. import panda
+How to refer to the PND variable in the program if the package is imported by the command:
+    import panda_pack
+    >> panda_pack.panda.PND
+
+6) The panda_pack package has two modules: panda1.py and panda2.py.
+The __init__.py file contains the following commands:
+    from. import panda2
+    from. import panda1
+    __all__ = ['panda1']
+How will package imports work in this case, if in the main program the package is imported using the command:
+    from panda_pack import *
+    >> only the panda1 module is imported

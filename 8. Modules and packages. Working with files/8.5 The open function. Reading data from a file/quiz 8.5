@@ -1,0 +1,52 @@
+in this lesson we do not solve examples, but there is a quiz:
+
+1)  What does the open function do?
+    >> opens a file for reading or writing
+
+2)  The path to the text.dat file looks like this:
+    C:/python/course/dat/text.dat
+    The executable Python program is located in the directory:
+    C:/python/course
+    Check all valid paths to this file relative to the executable program.
+    >> C:/python/course/dat/text.dat
+    >> dat/text.dat
+
+3)  When calling the open function to open the text.dat file:
+    file = open('text.dat')
+    file opens on:
+    >> reading
+
+4)  hat will happen as a result of executing the command:
+    file = open('text.dat', encoding='utf-8')
+    >> the text.dat file is opened for reading in UTF-8 encoding
+
+5)  What happens when you run the commands:
+    file = open('text.dat', encoding='utf-8')
+    r = file.read(4)
+    >> the first 4 characters will be read from the text.dat file (characters can consist of several bytes)
+
+6)  What does the seek method do in the following code snippet:
+    file = open('text.dat', encoding='utf-8')
+    r = file.read(40)
+    file.seek(0)
+    >> sets the file position to the beginning
+
+7)  What is the file tell method for?
+    >> returns the current position of the file
+
+8)  The text.dat file contains the lines:
+        - Tell me, uncle, it's not for nothing
+        I learned Python with a channel
+        What did Balakirev hand out?
+    What will the variables t1 and t2 contain when the following program fragment is executed:
+        file = open('text.dat', encoding='utf-8')
+        t1 = file.readline()
+        t2 = file.readline()
+    >> t1 is the first line and t2 is the second line
+
+9)  What does the readlines file method return?
+    >> a list of all lines in a file
+
+10) Why close a file with the close method after working with it?
+    >> to free the resources associated with this file
+    >> so that the data written to the file is not lost

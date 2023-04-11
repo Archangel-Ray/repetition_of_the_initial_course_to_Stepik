@@ -1,0 +1,20 @@
+there is one example in this tutorial, and of course there is a quiz:
+
+1)  What happens if you try to open a non-existent file for reading?
+    >> a FileNotFoundError error will occur
+
+2)  What is the with context manager for when working with files?
+    >> it allows you to automatically close the file
+
+3)  There is a program fragment:
+        file = open('my_file.txt')
+        s = file.readline()
+        file.close()
+    What is the right way to write a context manager here?
+    >> with open("my_file.txt") as file: ...
+
+4)  When is the finally block executed in a try/except/finally construct?
+    >> always after the execution of the try and except blocks
+
+5)  When is the except block executed in a try / except / finally construct?
+    >> when appropriate errors occur in the try block
